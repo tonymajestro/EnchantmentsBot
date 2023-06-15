@@ -9,4 +9,3 @@ It also uses python's [unittest library](https://docs.python.org/3/library/unitt
 
 ## Infrastructure code
 The AWS Lambda, DynamoDB tables, and SNS topics are created using Typescript and CDK. Resources can be found in the [lib directory](https://github.com/tonymajestro/EnchantmentsBot/blob/main/lib/v2-stack.ts).
-

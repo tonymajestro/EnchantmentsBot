@@ -37,8 +37,11 @@ class EnchantmentsHelper(object):
         else:
             self.parse(data)
 
-        sitesMap = self.filterSites(self.availableSites)
+        if len(self.availableSites) == 0:
+            print('No sites available right now.')
+            return
 
+        sitesMap = self.filterSites(self.availableSites)
         if len(sitesMap) > 0:
             self.sendNotifications(sitesMap)
 
@@ -83,7 +86,7 @@ class EnchantmentsHelper(object):
         return filteredSitesMap
 
     def sendNotifications(self, sitesMap):
-        msg = ''
+        msg = 'Enchantment sites available:\n'
         for siteName, sites in sitesMap.items():
             siteMsg = f'Available dates for {siteName}'
             for site in sites:
