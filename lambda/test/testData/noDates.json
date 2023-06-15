@@ -1,0 +1,95 @@
+{
+    "23": {
+        "division_id": "23",
+        "quota_type_maps": {
+            "QuotaUsageByMember": {
+                "2023-06-01T00:00:00Z": {
+                    "total": 4,
+                    "remaining": 0,
+                    "show_walkup": false,
+                    "is_secret_quota": false
+                },
+                "2023-06-02T00:00:00Z": {
+                    "total": 4,
+                    "remaining": 0,
+                    "show_walkup": false,
+                    "is_secret_quota": false
+                },
+                "2023-06-03T00:00:00Z": {
+                    "total": 4,
+                    "remaining": 0,
+                    "show_walkup": false,
+                    "is_secret_quota": false
+                },
+                "2023-06-04T00:00:00Z": {
+                    "total": 5,
+                    "remaining": 0,
+                    "show_walkup": false,
+                    "is_secret_quota": false
+                }
+            }
+        }
+    },
+    "29": {
+        "division_id": "23",
+        "quota_type_maps": {
+            "QuotaUsageByMember": {
+                "2023-06-01T00:00:00Z": {
+                    "total": 4,
+                    "remaining": 0,
+                    "show_walkup": false,
+                    "is_secret_quota": false
+                },
+                "2023-06-02T00:00:00Z": {
+                    "total": 4,
+                    "remaining": 0,
+                    "show_walkup": false,
+                    "is_secret_quota": false
+                },
+                "2023-06-03T00:00:00Z": {
+                    "total": 4,
+                    "remaining": 0,
+                    "show_walkup": false,
+                    "is_secret_quota": false
+                },
+                "2023-06-04T00:00:00Z": {
+                    "total": 5,
+                    "remaining": 0,
+                    "show_walkup": false,
+                    "is_secret_quota": false
+                }
+            }
+        }
+    },
+    "30": {
+        "division_id": "23",
+        "quota_type_maps": {
+            "QuotaUsageByMember": {
+                "2023-06-01T00:00:00Z": {
+                    "total": 4,
+                    "remaining": 0,
+                    "show_walkup": false,
+                    "is_secret_quota": false
+                },
+                "2023-06-02T00:00:00Z": {
+                    "total": 4,
+                    "remaining": 0,
+                    "show_walkup": false,
+                    "is_secret_quota": false
+                },
+                "2023-06-03T00:00:00Z": {
+                    "total": 4,
+                    "remaining": 0,
+                    "show_walkup": false,
+                    "is_secret_quota": false
+                },
+                "2023-06-04T00:00:00Z": {
+                    "total": 5,
+                    "remaining": 0,
+                    "show_walkup": false,
+                    "is_secret_quota": false
+                }
+            }
+        }
+    }
+}
