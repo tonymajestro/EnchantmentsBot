@@ -5,11 +5,13 @@
     "v2": "bin/v2.js"
   },
   "scripts": {
-    "build": "tsc",
     "dockerBuild": "docker build -t enchantments:latest -f lambda/Dockerfile .",
+    "prebuild": "npm run dockerBuild",
+    "build": "tsc && npm run dockerBuild",
     "dockerRun": "docker run -p 9000:8080 enchantments:latest",
     "watch": "tsc -w",
     "test": "cd lambda && venv/bin/python3 -m unittest test.enchantmentsTest",
+    "precdk": "npm run test",
     "cdk": "cdk"
   },
   "devDependencies": {
