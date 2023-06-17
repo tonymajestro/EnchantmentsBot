@@ -39,7 +39,7 @@ class EnchantmentsHelper(object):
 
         if len(self.availableSites) == 0:
             print('No sites available right now.')
-            return
+            return dict()
 
         sitesMap = self.filterSites(self.availableSites)
         if len(sitesMap) > 0:
@@ -56,7 +56,7 @@ class EnchantmentsHelper(object):
             self.checkAvailability(siteId, siteName, siteData)
 
     def checkAvailability(self, siteId, siteName, siteData):
-        for dateStr, dateData in siteData['quota_type_maps']['QuotaUsageByMember'].items():
+        for dateStr, dateData in siteData['date_availability'].items():
             spotsRemaining = dateData['remaining']
             if spotsRemaining > 0:
                 self.availableSites.append(SiteData(siteId, siteName, dateStr, spotsRemaining))
@@ -90,7 +90,7 @@ class EnchantmentsHelper(object):
         for siteName, sites in sitesMap.items():
             siteMsg = f'Available dates for {siteName}'
             for site in sites:
-                siteMsg += '\n\t{date}: {spots} available'.format(date=site.date, spots=site.spotsAvailable)
+                siteMsg += '\n\t{date}'.format(date=site.date)
 
             msg += siteMsg
 
